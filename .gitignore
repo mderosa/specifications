@@ -1,7 +1,9 @@
 *.dot
 *.out
 *.old
+*.tex
 states/
 *.toolbox/
 
+.vscode/
 _apalache-out/

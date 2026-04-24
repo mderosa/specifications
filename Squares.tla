@@ -3,17 +3,17 @@ EXTENDS TLC, Integers
 
 (*--algorithm Squares
 variables 
-    x \in 1.. 10;
+    x \in 1..10;
 begin
     assert x ^ 2 <= 100;
 end algorithm; *)
-\* BEGIN TRANSLATION (chksum(pcal) = "7087572b" /\ chksum(tla) = "26b20e0e")
-VARIABLES x, pc
+\* BEGIN TRANSLATION (chksum(pcal) = "7087572b" /\ chksum(tla) = "6b7c10db")
+VARIABLES pc, x
 
-vars == << x, pc >>
+vars == << pc, x >>
 
 Init == (* Global variables *)
-        /\ x \in 1.. 10
+        /\ x \in 1..10
         /\ pc = "Lbl_1"
 
 Lbl_1 == /\ pc = "Lbl_1"
